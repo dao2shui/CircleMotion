@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feed—rating</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link type="text/css" rel="styleSheet" href="css/main.css">
+</head>
+<body>
+    <div id="main">
+        <div id="start_contain">
+            <img src="image/instruction_explicit.png" alt="" style="margin: auto;height:90%;" >
+            <!-- <p>你的实验准备开始，如果准备完成，按空格键开始！</p> -->
+        </div>
+        <div class="enter_before" style="display: none;">
+            <!-- <img src="image/fixation.jpg" alt="" style="width: 30px;margin: auto;"> -->
+            <p style="margin-top: 20%;">准备好后按Enter键进入移动小球界面</p>
+        </div>
+        <div class="move_before" style="display: none;">
+            <img src="image/fixation.jpg" alt="" style="width: 30px;margin: auto;">
+        </div>
+        <div class="main_contain" style="display: none;">
+            <div class="square1" style="top: 0;left: 0;"></div>
+            <div class="square1" style="top: 0;right: 0;"></div>
+            <div class="square1" style="bottom: 0;left:0;"></div>
+            <div class="square1" style="bottom: 0;right: 0;"></div>
+            <div class="square2"></div>
+            <div class="circle" id="movecir"></div>
+        </div>
+        <div class="error_info" style="display: none;">
+            <!-- <img src="image/down.jpg" alt="" style="margin: auto;" > -->
+            <p style="margin-top: 20%;">未在规定时间内到达目标，请集中注意力。</p>
+        </div>
+        <div id="inone"  style="display: none;">
+            <p>对小球的运动，你觉得受你控制的程度度是多少？数字越大代表你觉得受你控制的程度越强</p>
+            <div class="radio_check">
+                <input type="radio" name="strength" id="1" class="radioinput" value="1"><label for="1">1</label>
+                <input type="radio" name="strength" id="2" class="radioinput" value="2"><label for="2">2</label>
+                <input type="radio" name="strength" id="3" class="radioinput" value="3"><label for="3">3</label>
+                <input type="radio" name="strength" id="4" class="radioinput" value="4"><label for="4">4</label>
+                <input type="radio" name="strength" id="5" class="radioinput" value="5"><label for="5">5</label>
+                <input type="radio" name="strength" id="6" class="radioinput" value="6"><label for="6">6</label>
+                <input type="radio" name="strength" id="7" class="radioinput" value="7"><label for="7">7</label>
+                <input type="radio" name="strength" id="8" class="radioinput" value="8"><label for="8">8</label>
+                <input type="radio" name="strength" id="9" class="radioinput" value="9"><label for="9">9</label>
+            </div>
+        </div>
+        <div id="infoshow" style="display: none;">
+            <p style="font-size: 18px;"> </p>
+            <img src="image/up.png" alt="" style="width: 200px;margin: auto;" class="image_time">
+            <img src="image/middle.png" alt="" style="width: 200px;margin: auto;" class="image_time">
+            <img src="image/down.png" alt="" style="width: 200px;margin: auto;" class="image_time">
+        </div>
+        <div class="rest_info"  style="display: none;">
+            <!-- <img src="image/down.jpg" alt="" style="margin: auto;" > -->
+            <!-- <p style="margin-top: 20%;">中场休息时间，您可以休息<span id="rest_time"></span>秒。</p> -->
+            <p style="margin-top: 20%;">中场休息时间，您可以休息一段时间，休息完后按q继续</p>
+        </div>
+        <div id="end_contain" style="display: none;">
+            <p>你的实验已结束！</p>
+        </div>
+        <!-- <div class="top">
+            <div class="contain">
+                <div class="square"></div>
+            </div>
+            <div class="contain">
+                <div class="square"></div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="circle"></div>
+        </div>
+        <div class="bottom">
+            <div class="contain">
+                <div class="square"></div>
+            </div>
+            <div class="contain">
+                <div class="square"></div>
+            </div>
+        </div> -->
+    </div>
+</body>
+</html>
